@@ -7,33 +7,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 public class Jogo extends Activity {
 
-    public int[][] status = new int[3][3];
+    public static ArrayList<Planta> jardim = new ArrayList<Planta>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jogo);
-
-        status[0][0] = 0;
-        status[0][1] = 0;
-        status[0][2] = 0;
-        status[1][0] = 0;
-        status[1][1] = 0;
-        status[1][2] = 0;
-        status[2][0] = 0;
-        status[2][1] = 0;
-        status[2][2] = 0;
-
-
-
 
         final ImageButton c11 = (ImageButton) findViewById(R.id.c11);
         c11.setBackgroundResource((R.drawable.grass2));
         c11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                status[0][0]++;
+               /* status.get(0)++;
                 if(status[0][0] > 3){
                     status[0][0] = 3;
                 }
@@ -50,7 +39,7 @@ public class Jogo extends Activity {
                     case 3:
                         c11.setBackgroundResource(R.drawable.tree2);
                         break;
-                }
+                }*/
 
             }
         });
