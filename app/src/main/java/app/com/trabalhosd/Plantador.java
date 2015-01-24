@@ -16,14 +16,14 @@ public class Plantador {
     }
 
     public void plantar(int planta){
-        statusAtual = Jogo.jardim.get(planta).getStatus();
+        int statusAtual = Jogo.jardim.get(planta).getStatus();
         if(statusAtual == 0){
             Jogo.jardim.get(planta).setStatus(1);
         }
     }
 
     public void regar(int planta){
-        statusAtual = Jogo.jardim.get(planta).getStatus();
+        int statusAtual = Jogo.jardim.get(planta).getStatus();
         if(statusAtual != 0 && statusAtual != 3){
             Jogo.jardim.get(planta).setStatus(statusAtual++);
         }
