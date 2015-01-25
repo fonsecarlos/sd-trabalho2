@@ -16,10 +16,10 @@ public class Lenhador {
     }
 
     public void derrubarArvore(int planta){
-        int statusAtual = Jogo.jardim.get(0).getStatus();
-        if(statusAtual == 3){
-            Jogo.jardim.get(planta).set(0);
-        }
+//        int statusAtual = Jogo.jardim.get(0).getStatus();
+//        if(statusAtual == 3){
+//            Jogo.jardim.get(planta).set(0);
+//        }
     }
 
 
