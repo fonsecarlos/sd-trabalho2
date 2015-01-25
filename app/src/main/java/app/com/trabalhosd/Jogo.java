@@ -62,6 +62,24 @@ public class Jogo extends Activity {
             case R.id.planta_2:
                 botao = 2;
                 break;
+            case R.id.planta_3:
+                botao = 3;
+                break;
+            case R.id.planta_4:
+                botao = 4;
+                break;
+            case R.id.planta_5:
+                botao = 5;
+                break;
+            case R.id.planta_6:
+                botao = 6;
+                break;
+            case R.id.planta_7:
+                botao = 7;
+                break;
+            case R.id.planta_8:
+                botao = 8;
+                break;
         }
 
 
