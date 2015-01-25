@@ -35,6 +35,66 @@
         android:onClick="acao"
         android:id="@+id/planta_2"/>
 
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/grass2"
+        android:id="@+id/planta_3"
+        android:layout_below="@id/planta_0"
+        android:layout_marginTop="20px"
+        android:onClick="acao"/>
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/planta_1"
+        android:background="@drawable/grass2"
+        android:onClick="acao"
+        android:id="@+id/planta_4"
+        android:layout_marginTop="20px"/>
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/grass2"
+        android:onClick="acao"
+        android:id="@+id/planta_5"
+        android:layout_below="@id/planta_2"
+        android:layout_marginTop="20px"/>
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/grass2"
+        android:id="@+id/planta_6"
+        android:layout_below="@id/planta_3"
+        android:layout_marginTop="20px"
+        android:onClick="acao"/>
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/planta_4"
+        android:background="@drawable/grass2"
+        android:onClick="acao"
+        android:id="@+id/planta_7"
+        android:layout_marginTop="20px"/>
+
+    <ImageButton
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/grass2"
+        android:onClick="acao"
+        android:id="@+id/planta_8"
+        android:layout_below="@id/planta_5"
+        android:layout_marginTop="20px"/>
+
     <!--<ImageButton
         android:layout_width="200px"
         android:layout_height="200px"
