@@ -6,16 +6,26 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class Jogo extends Activity {
 
     public static ArrayList<Planta> jardim = new ArrayList<Planta>(9);
+    public static Plantador plantador = new Plantador();
+    public static Personagem personagem;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jogo);
+        boolean plantador = true;
+        if(plantador){
+            TextView textoPersonagem = (TextView) findViewById(R.id.personagem);
+            textoPersonagem.setText("Plantador");
+            personagem = new Plantador();
+        }
 
         for(int i = 0; i < 9; i++){
             Planta pt = new Planta();
@@ -83,21 +93,28 @@ public class Jogo extends Activity {
         }
 
 
-        int statusAtual = jardim.get(botao).getStatus();
-            jardim.get(botao).setStatus(statusAtual+1);
-
-        switch(jardim.get(botao).getStatus()){
+        Planta planta = jardim.get(botao);
+        personagem.acao(planta);
+        switch(planta.getStatus()){
             case 0:
+                //plantador.plantar(planta);
                 view.setBackgroundResource(R.drawable.grass2);
                 break;
             case 1:
+               // plantador.regar(planta);
                 view.setBackgroundResource(R.drawable.seed);
                 break;
             case 2:
+               // plantador.regar(planta);
                 view.setBackgroundResource(R.drawable.bush);
                 break;
             case 3:
-                view.setBackgroundResource(R.drawable.tree2);
+               // plantador.proteger(planta);
+                if(planta.protecao){
+                    view.setBackgroundResource(R.drawable.tree2);
+                }else{
+                    view.setBackgroundResource(R.drawable.tree2);
+                }
                 break;
         }
     }

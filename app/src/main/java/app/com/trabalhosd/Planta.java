@@ -9,6 +9,8 @@ public class Planta {
 
     int status;
     int tempo_vida;
+
+
     boolean protecao;
     // 0- Destruído
     // 1- Semente
@@ -45,5 +47,14 @@ public class Planta {
 
     public void setTempo_vida(int tempo_vida) {
         this.tempo_vida = tempo_vida;
+    }
+
+
+    public boolean isProtecao() {
+        return protecao;
+    }
+
+    public void setProtecao(boolean protecao) {
+        this.protecao = protecao;
     }
 }
